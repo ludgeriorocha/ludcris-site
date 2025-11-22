@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lud e Cris Home Care</title>
-
     <!-- Framework W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -128,7 +120,7 @@
         <!-- HOME -->
         <header class="w3-container w3-padding-32 w3-center" id="home">
             <h1 class="tema-primario">Lud e Cris Home Care</h1>
-            <img src="imagem/capa inicial.png" class="w3-image" width="300">
+            <img src="capa inicial.png" class="w3-image" width="300">
             <h4>lud e cris home care cuidando da sua familia</h4>
             <br>
         </header>
@@ -153,21 +145,21 @@
             <div class="slideshow-container">
 
                 <div class="mySlide">
-                    <img src="imagem/IMAGEM1.jpg">
+                    <img src="IMAGEM1.jpg">
                     <div class="w3-center w3-padding-16 w3-large w3-text-dark-gray">
                     <b>Administração de Medicação</b>
                     </div>
                 </div>
 
                 <div class="mySlide">
-                    <img src="imagem/IMAGEM2.jpeg">
+                    <img src="IMAGEM2.jpeg">
                     <div class="w3-center w3-padding-16 w3-large w3-text-dark-gray">
                     <b>Curativo</b>
                     </div>
                 </div>
 
                 <div class="mySlide">
-                    <img src="imagem/IMAGEM3.jpg">
+                    <img src="IMAGEM3.jpg">
                     <div class="w3-center w3-padding-16 w3-large w3-text-dark-gray">
                     <b>Reabilitação</b>
                     </div>
@@ -205,15 +197,15 @@
 
             <div class="w3-row-padding">
                 <div class="w3-third w3-center">
-                    <img src="imagem/coren sp.png" class="w3-image" style="width:90%">
+                    <img src="coren sp.png" class="w3-image" style="width:90%">
                 </div>
 
                 <div class="w3-third w3-center">
-                    <img src="imagem/santa casa.png" class="w3-image" style="width:90%">
+                    <img src="santa casa.png" class="w3-image" style="width:90%">
                 </div>
 
                 <div class="w3-third w3-center">
-                    <img src="imagem/uniban.jpg" class="w3-image" style="width:90%">
+                    <img src="uniban.jpg" class="w3-image" style="width:90%">
                 </div>
             </div>
         </div>
