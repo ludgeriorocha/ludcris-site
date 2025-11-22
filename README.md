@@ -1,17 +1,322 @@
-# Ludcris Home Care
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-Este repositório contém os arquivos do site oficial **Ludcris Home Care**, desenvolvido para apresentar serviços, informações e contato da empresa.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lud e Cris Home Care</title>
 
-## 🚀 Tecnologias usadas
-- HTML5
-- CSS3
-- GitHub Pages (deploy)
+    <!-- Framework W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-## 🌐 Site online
-A versão publicada estará disponível após ativar o GitHub Pages.
+    <style>
+        /* SIDEBAR */
+        .w3-sidebar {
+            width: 140px;
+            background: #0B3C49;
+        }
 
-## 📁 Estrutura do projeto
-- `index.html` — Página principal do site
+        /* CONTEÚDO PRINCIPAL */
+        #main {
+            margin-left: 140px;
+        }
 
-## 📞 Contato
-Site criado por Ludgerio Rocha.
+        /* TIPOGRAFIA */
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        /* CORES */
+        .tema-primario {
+            color: #4fb3bf;
+        }
+
+        /* ROLAGEM SUAVE */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* MOBILE */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0;
+            }
+        }
+
+        /* BOTÃO WHATSAPP FLUTUANTE */
+        .btn-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 18px;
+            font-size: 28px;
+            z-index: 999;
+        }
+
+        .btn-whatsapp:hover {
+            opacity: 0.8;
+        }
+
+        /* SLIDESHOW */
+        .slideshow-container {
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+        }
+
+        .mySlide {
+            display: none;
+        }
+
+        .mySlide img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00000033;
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511959945421" target="_blank" class="btn-whatsapp w3-center w3-shadow">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- SIDEBAR -->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small w3-animate-left">
+
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-text-white">
+            <i class="fa fa-home w3-xlarge"></i>
+            <p>HOME</p>
+        </a>
+
+        <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-text-white">
+            <i class="fa fa-users w3-xlarge"></i>
+            <p>PARCEIROS</p>
+        </a>
+
+        <a href="#servicos" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-text-white">
+            <i class="fa fa-medkit w3-xlarge"></i>
+            <p>SERVIÇOS</p>
+        </a>
+
+        <a href="#FAQ" class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-text-white">
+            <i class="fa fa-question-circle w3-xlarge"></i>
+            <p>FAQ</p>
+        </a>
+
+    </nav>
+
+    <!-- NAVBAR MOBILE -->
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-dark-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25%">HOME</a>
+            <a href="#parceiros" class="w3-bar-item w3-button" style="width:25%">PARCEIROS</a>
+            <a href="#servicos" class="w3-bar-item w3-button" style="width:25%">SERVIÇOS</a>
+            <a href="#FAQ" class="w3-bar-item w3-button" style="width:25%">FAQ</a>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="w3-padding-large" id="main">
+
+        <!-- HOME -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 class="tema-primario">Lud e Cris Home Care</h1>
+            <img src="imagem/capa inicial.png" class="w3-image" width="300">
+            <h4>lud e cris home care cuidando da sua familia</h4>
+            <br>
+        </header>
+
+        <!-- SOBRE -->
+        <div class="w3-content w3-padding-32">
+            <h2 class="tema-primario">Cuidados Domiciliares</h2>
+            <hr>
+            <p class="w3-large">
+                Na <b>Lud e Cris Home Care</b>, oferecemos cuidados médicos e de enfermagem de alta qualidade diretamente no
+                conforto do seu lar.
+            </p>
+        </div>
+         <!-- SERVIÇOS -->
+        <section class="w3-content w3-padding-64" id="servicos">
+            <h2 class="tema-primario">Serviços</h2>
+            <hr>
+
+            <p class="w3-large">Veja alguns dos serviços oferecidos pela nossa equipe:</p>
+
+            <!-- SLIDESHOW AUTOMÁTICO -->
+            <div class="slideshow-container">
+
+                <div class="mySlide">
+                    <img src="imagem/IMAGEM1.jpg">
+                    <div class="w3-center w3-padding-16 w3-large w3-text-dark-gray">
+                    <b>Administração de Medicação</b>
+                    </div>
+                </div>
+
+                <div class="mySlide">
+                    <img src="imagem/IMAGEM2.jpeg">
+                    <div class="w3-center w3-padding-16 w3-large w3-text-dark-gray">
+                    <b>Curativo</b>
+                    </div>
+                </div>
+
+                <div class="mySlide">
+                    <img src="imagem/IMAGEM3.jpg">
+                    <div class="w3-center w3-padding-16 w3-large w3-text-dark-gray">
+                    <b>Reabilitação</b>
+                    </div>
+                </div>
+            </div>
+            <br>
+         </section>
+         
+         <!-- SLIDESHOW AUTOMÁTICO -->
+         <script>
+         let slideIndex = 0;
+
+         function showSlides() {
+            let slides = document.getElementsByClassName("mySlide");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 4000); // 3 segundos
+         }
+
+         showSlides();
+         </script>
+
+        <!-- PARCEIROS -->
+        <div class="w3-content w3-padding-64" id="parceiros">
+            <h2 class="tema-primario">Parceiros</h2>
+            <hr>
+
+            <div class="w3-row-padding">
+                <div class="w3-third w3-center">
+                    <img src="imagem/coren sp.png" class="w3-image" style="width:90%">
+                </div>
+
+                <div class="w3-third w3-center">
+                    <img src="imagem/santa casa.png" class="w3-image" style="width:90%">
+                </div>
+
+                <div class="w3-third w3-center">
+                    <img src="imagem/uniban.jpg" class="w3-image" style="width:90%">
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="w3-content w3-padding-64" id="FAQ">
+            <h2 class="tema-primario">Perguntas Frequentes</h2>
+            <hr>
+
+            <button class="w3-button w3-block w3-left-align w3-light-grey" onclick="toggleFAQ('faq1')">
+                ❓ A empresa atende 24h?
+            </button>
+            <div id="faq1" class="w3-hide w3-padding w3-white w3-card">
+                Sim, enfermagem e suporte 24h.
+            </div>
+
+            <button class="w3-button w3-block w3-left-align w3-light-grey" onclick="toggleFAQ('faq2')">
+                ❓ Vocês atendem quais regiões?
+            </button>
+            <div id="faq2" class="w3-hide w3-padding w3-white w3-card">
+                Grande São Paulo.
+            </div>
+
+            <button class="w3-button w3-block w3-left-align w3-light-grey" onclick="toggleFAQ('faq3')">
+                ❓ Aceitam convênio?
+            </button>
+            <div id="faq3" class="w3-hide w3-padding w3-white w3-card">
+                Depende do plano.
+            </div>
+
+            <button class="w3-button w3-block w3-left-align w3-light-grey" onclick="toggleFAQ('faq4')">
+                ❓ Posso solicitar apenas um cuidador?
+            </button>
+            <div id="faq4" class="w3-hide w3-padding w3-white w3-card">
+                Sim.
+            </div>
+
+            <button class="w3-button w3-block w3-left-align w3-light-grey" onclick="toggleFAQ('faq5')">
+                ❓ Como funciona o atendimento inicial?
+            </button>
+            <div id="faq5" class="w3-hide w3-padding w3-white w3-card">
+                Avaliação completa e plano de cuidados.
+            </div>
+
+        </div>
+    
+    <!-- FAQ ABRE/FECHA -->
+    <script>
+        function toggleFAQ(id) {
+            var box = document.getElementById(id);
+            if (box.classList.contains("w3-hide")) {
+                box.classList.remove("w3-hide");
+            } else {
+                box.classList.add("w3-hide");
+            }
+        }
+    </script>
+
+      <!-- RODAPÉ -->
+    <footer class="w3-center w3-padding-32 w3-dark-grey w3-text-white">
+
+            <h3>Lud e Cris Home Care</h3>
+            <p><i class="fa fa-envelope"></i> contato@ludcrishomecare.com</p>
+            <p><i class="fa fa-phone"></i> (11) 95994-5421</p>
+
+            <!-- FORMULÁRIO CENTRALIZADO -->
+            <div class="w3-content" style="max-width:500px; margin-top:20px;">
+
+                <form action="mailto:contato@ludcrishomecare.com" method="post" enctype="text/plain">
+
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome"></p>
+
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto"></p>
+
+                    <p><textarea class="w3-input w3-padding-16" placeholder="Mensagem" required name="Mensagem"></textarea></p>
+
+                    <p>
+                        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                            <i class="fa fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                    </p>
+
+                </form>
+            </div>
+
+            <!-- REDES SOCIAIS -->
+            <div class="w3-xlarge w3-section">
+                <a href="https://www.facebook.com/" target="_blank" class="w3-button w3-hover-opacity">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="w3-button w3-hover-opacity">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" class="w3-button w3-hover-opacity">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>
